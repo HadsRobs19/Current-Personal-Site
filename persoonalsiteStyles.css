@@ -1,0 +1,670 @@
+
+:root {
+    --text-color: rgb(189, 187, 187); 
+    --header-color: #fdd3f0; 
+    --text-shadow-color: 3px 3px rgb(1, 86, 222);
+}
+
+body {
+     background-color: black; 
+     background: linear-gradient(60deg, #050010, #71046c, #3a0f32, #290b25, #56014d, #3c0d32, #140210, #5d0643); 
+}
+
+/*h1 Hadassah Roberts{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 140px;
+    color: var(--text-color);
+    text-align:center;
+    text-shadow: rgb(139, 139, 139);
+    margin-top: 200px;
+    
+} */
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.glitch /* Hadassah Roberts */{
+    position: relative;
+    font-size: 140px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    margin-top: 200px;
+    line-height: 1.2;
+    color: var(--header-color);
+    letter-spacing: 5px;
+    z-index: 1;
+    padding-top: 10px;
+    animation: moving 5s infinite;
+    -webkit-animation: moving 5s infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+}
+
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8; 
+}
+
+.glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #0ff;
+    z-index: -1;
+}
+
+.glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+}
+
+@keyframes glitch-color {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(-3px, 3px);
+    }
+    60% {
+        transform: translate(3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+
+nav {
+    font-size: 100px;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 100%;
+    width: 100%;
+}
+
+.navline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px,
+        /*white 2px,*/
+        white 4px,
+        transparent 3px
+    );
+    box-shadow:rgb(157, 33, 126) 0 0 15px;
+}
+nav a {
+    font-size: 40px;
+    text-shadow: var(--text-shadow-color);
+    color: var(--text-color);
+    display:contents;
+    justify-content: space-between;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+nav a:hover {
+    color: rgb(216, 128, 202);
+}
+
+.myname {
+    margin-bottom: 40px;
+    animation-name: slide-from-left;
+    animation-duration: 5s;
+}
+
+h1 {
+    color: var(--text-color);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mepicture {
+    border-style:inherit;
+    border-color:rgb(139, 139, 139);
+    padding-right: 900px;;
+    padding-top: 100px;
+    margin-top: 100px;
+    flex-basis: 40%;
+    
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+#wrapper /* wrapper around container id */ {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+}
+
+#surround /* About Me container id */ {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+}
+
+h1 /* About Me text */ {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 150px;
+    font-weight: 900;
+    color: var(--header-color);
+    line-height: 1;
+    padding-left: 500px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    margin-right:20px;
+}
+
+h1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes text-shadow /* subheading animation */ {
+    0% {
+        transform: translateY(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #b426a1,
+            0 0 0 #ab0f82;
+    }
+    20% {
+        transform: translateY(-1em);
+        text-shadow:
+            0 0.125em 0 #0c2ffb,
+            0 0.25em 0 #2cfcfd,
+            0 -0.125em 0 #b426a1,
+            0 -0.25em 0 #ab0f82;
+    }
+    40% {
+        transform: translateY(0.5em);
+        text-shadow:
+            0 -0.0625em 0 #0c2ffb,
+            0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #b426a1,
+            0 0.1225em 0 #ab0f82;
+    }
+    60% {
+        transform: translateY(-0.25em);
+        text-shadow:
+            0 0.03125em 0 #0c2ffb,
+            0 0.0625em 0 #2cfcfd,
+            0 -0.03125em 0 #b426a1,
+            0 -0.0625em 0 #ab0f82;
+    }
+    80% {
+        transform: translateY(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #b426a1,
+            0 0 0 #ab0f82;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+#image1 /* picture of me */ {
+    /* border: 5px solid #e834ca; */
+    box-shadow: 0 0 50px 7px #e834ca; 
+    animation-name: shadows;
+    animation-name: moving;
+    animation: shadows 2s infinite;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+@keyframes moving {
+    from {top: 0px;}
+    to {top: 130px;}
+}
+@-webkit-keyframes moving {
+    from {top: 0px;}
+    to {top: 130px;}
+}
+
+.moveimage {
+    animation: moving 5s infinite;
+    -webkit-animation: moving 5s infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes shadows /* image box shadow animation */ {
+    0% {box-shadow: #e834ca 0 0 60px;}
+    50% {box-shadow: blueviolet 0 0 60px;}
+    75% {box-shadow: rebeccapurple 0 0 60px;}
+    100% {box-shadow: #48abe0 0 0 60px;}
+}
+
+.about /* Hello, my names Hadassa! */ {
+    color: var(--text-color);
+    font-size: 35px;
+    text-align:justify;
+    text-shadow: var(--text-shadow-color);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* text-indent: 600px; */
+    padding-left: 500px; 
+    padding-right: 50px; 
+    /* margin-bottom: 400px; */
+    margin-bottom: 0.5px;
+    
+
+}
+
+.educationline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px,
+        /*white 2px,*/
+        white 4px,
+        transparent 3px
+    );
+    box-shadow:rgb(157, 33, 126) 0 0 15px;
+}
+
+.wrapper3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em; 
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+h3 {
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    padding-left: 75px;
+    text-shadow: var(--text-shadow-color);
+}
+
+h4 /* 2018-2021 */ {
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    padding-left: 200px;
+    text-shadow: var(--text-shadow-color);
+}
+
+h5 {
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    padding-left: 200px;
+    text-shadow: var(--text-shadow-color);
+}
+
+.leto /* picture of leto highschool */ {
+    padding-left: 20px;
+}
+
+.collegename {
+    font-size: 60px;
+    padding-left: 700px;
+}
+
+.ucf /* picture of ucf */ {
+    padding-left: 840px;
+}
+
+.experienceline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px,
+        /*white 2px,*/
+        white 4px,
+        transparent 3px
+    );
+    box-shadow:rgb(157, 33, 126) 0 0 15px;
+}
+
+.workname {
+    margin-top: 800px;
+}
+
+.uworkname {
+    padding-left: 800px;
+}
+
+.headline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px, 
+        /*white 2px,*/
+        white 4px,
+        /* transparent 3px */
+    );
+    box-shadow:rgb(187, 69, 157) 0 0 15px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    width: 100%;
+}
+
+.aboutline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 600px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px, 
+        /*white 2px,*/
+        white 3px,
+        /* transparent 3px */
+    );
+    box-shadow:rgb(187, 69, 157) 0 0 15px;
+    margin-bottom: 800px;
+}
+
+#wrapper2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em; 
+}
+
+.programminglanguages {
+    font-size: 45px;
+    text-shadow: 3px 3px rgb(1, 86, 222);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    margin-bottom: 300px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+}
+
+.skillname {
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    text-shadow: 3px 3px rgb(1, 86, 222);
+}
+
+.holder {
+    background-color: rgb(90, 90, 90);
+    width: 80%;
+    border-radius: 15px;
+}
+
+.skill {
+    background-color: rgb(207, 7, 200);
+    background-image: linear-gradient(to right, rgb(218, 28, 212), rgb(98, 0, 98));
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    animation-name: animate-positive;
+    animation: animate-positive 6s;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes pbar {
+    from {top: 0px;}
+    to {top: 35px;}
+}
+@-webkit-keyframes pbar {
+    from {top: 0px;}
+    to {top: 35px;}
+}
+
+.animatepbar {
+    animation: pbar 5s infinite;
+    -webkit-animation: pbar 5s infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+}
+
+.html {
+    width: 85%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.js {
+    width: 70%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.css {
+    width: 80%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.csharp {
+    width: 10%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.java {
+    width: 25%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.progressarea {
+    padding-left: 30px;
+    animation-name: moving;
+}
+
+.proficiencies {
+    font-size: 45px;
+    text-shadow: var(--text-shadow-color);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    margin-bottom: 300px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+}
+
+.proficienciesprogress {
+    padding-left: 30px;
+}
+
+.pname {
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--text-color);
+    text-shadow: 2px 2px rgb(1, 86, 222);
+}
+
+.pholder {
+    background-color: rgb(90, 90, 90);
+    width: 80%;
+    border-radius: 15px;  
+}
+
+.proficiency {
+    background-color: rgb(8, 105, 184);
+    background-image: linear-gradient(to right, rgb(33, 170, 255), rgb(0, 79, 143));
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+    animation: animate-positive 6s;
+}
+
+.windows {
+    width: 90%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.macos {
+    width: 20%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.office {
+    width: 80%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.photoshop {
+    width: 75%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.illustrator {
+    width: 75%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ios {
+    width: 95%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.unity {
+    width: 20%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.skillsline {
+    height: 3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 600px;
+    background: linear-gradient(
+        to bottom,
+        transparent 2px, 
+        /*white 2px,*/
+        white 3px,
+        /* transparent 3px */
+    );
+    box-shadow:rgb(187, 69, 157) 0 0 15px;
+    margin-bottom: 800px;
+}
+
+#wrapper3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+}
+
+.publix {
+    padding-left: 15px;
+    padding-top: 300px;
+}
+
+.unionpark {
+    padding-left: 830px;
+}
+
+#projects {
+    padding-top: -800px;
+}
+
+footer {
+    background-color: rgba(58, 0, 48, 0.5);
+    width: 100%;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.shuffle {
+    top:-900px;
+}
+.footerinfo {
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#image2 /* insta logo */ {
+    animation-name: shadows;
+    animation: shadows 2s infinite;
+}
+
+#image3 /* linkedin logo */ {
+    animation-name: shadows;
+    animation: shadows 2s infinite;
+}
+
+#image4 /* github logo */ {
+    animation-name: shadows;
+    animation: shadows 2s infinite;
+}
+
+#image5 /* facebook logo */ {
+    animation-name: shadows;
+    animation: shadows 2s infinite;
+}
