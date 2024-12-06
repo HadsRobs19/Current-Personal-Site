@@ -8,8 +8,11 @@
 }
 
 body {
-     background-color: #121411; 
-     background: linear-gradient(60deg, #050010, #71046c, #3a0f32, #290b25, #56014d, #3c0d32, #140210, #5d0643); 
+     background-color: var(--background-color);
+     background: linear-gradient
+     (60deg, var(--background-color), #2B2E2A, var(--accent-color), var(--secondary-color), #1E2420
+     ); 
+     color: var(--text-color);
 }
 
 /*h1 Hadassah Roberts{
@@ -60,13 +63,13 @@ body {
 
 .glitch:before {
     animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-    color: #0ff;
+    color: var(--secondary-color);
     z-index: -1;
 }
 
 .glitch:after {
     animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-    color: #ff00ff;
+    color: var(--accent-color);
     z-index: -2;
 }
 
@@ -128,7 +131,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(216, 128, 202);
+    color: var(--accent-color);
 }
 
 .myname {
@@ -139,6 +142,7 @@ nav a:hover {
 
 h1 {
     color: var(--text-color);
+    text-shadow: 3px 3px var(--text-shadow-color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 200px;
     padding-left: 20px;
@@ -436,7 +440,7 @@ h5 {
 
 .programminglanguages {
     font-size: 45px;
-    text-shadow: 3px 3px rgb(1, 86, 222);
+    text-shadow: var(--text-shadow-color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--text-color);
     margin-bottom: 300px;
