@@ -1,12 +1,14 @@
 
 :root {
-    --text-color: rgb(189, 187, 187); 
-    --header-color: #fdd3f0; 
-    --text-shadow-color: 3px 3px rgb(1, 86, 222);
+    --text-color: #E9ECE8; /* Updated Text Color */
+    --header-color: #B7C2B4; /* Primary Color */
+    --text-shadow-color: rgba(85, 122, 76, 0.8); /* Secondary Color with slight transparency */
+    --background-color: #121411; /* Background Color */
+    --accent-color: #879D94; /* Accent Color */
 }
 
 body {
-     background-color: black; 
+     background-color: #121411; 
      background: linear-gradient(60deg, #050010, #71046c, #3a0f32, #290b25, #56014d, #3c0d32, #140210, #5d0643); 
 }
 
