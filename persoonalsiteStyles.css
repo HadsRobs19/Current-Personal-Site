@@ -379,7 +379,7 @@ h5 {
         white 4px,
         transparent 3px
     );
-    box-shadow:rgb(157, 33, 126) 0 0 15px;
+    box-shadow:rgb(111, 147, 98) 0 0 15px;
 }
 
 .workname {
@@ -403,7 +403,7 @@ h5 {
         white 4px,
         /* transparent 3px */
     );
-    box-shadow:rgb(187, 69, 157) 0 0 15px;
+    box-shadow:rgb(111, 147, 98) 0 0 15px;
 }
 
 .skills {
@@ -428,7 +428,7 @@ h5 {
         white 3px,
         /* transparent 3px */
     );
-    box-shadow:rgb(187, 69, 157) 0 0 15px;
+    box-shadow:rgb(111, 147, 98) 0 0 15px;
     margin-bottom: 800px;
 }
 
@@ -616,7 +616,7 @@ h5 {
         white 3px,
         /* transparent 3px */
     );
-    box-shadow:rgb(187, 69, 157) 0 0 15px;
+    box-shadow:rgb(111, 147, 98) 0 0 15px;
     margin-bottom: 800px;
 }
 
