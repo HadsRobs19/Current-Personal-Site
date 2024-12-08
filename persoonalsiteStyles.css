@@ -10,9 +10,9 @@
 
 body {
      background-color: var(--background-color);
-     background: linear-gradient
+     /*background: linear-gradient
      (60deg, var(--background-color), #2B2E2A, var(--accent-color), var(--secondary-color), #1E2420
-     ); 
+     ); */
      color: var(--text-color);
 }
 
