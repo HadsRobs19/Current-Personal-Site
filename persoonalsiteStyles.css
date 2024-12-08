@@ -427,7 +427,7 @@ h5 {
         transparent 2px, 
         /*white 2px,*/
         var(--text-color) 3px,
-        /* transparent 3px */
+        transparent 3px 
     );
     box-shadow: var(--primary-color) 0 0 15px;
     margin-bottom: 800px;
