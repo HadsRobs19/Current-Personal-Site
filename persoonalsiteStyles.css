@@ -614,7 +614,7 @@ h5 {
         to bottom,
         transparent 2px, 
         /*white 2px,*/
-        white 3px,
+        var(--text-color) 3px,
         /* transparent 3px */
     );
     box-shadow:rgb(111, 147, 98) 0 0 15px;
@@ -641,7 +641,7 @@ h5 {
 }
 
 footer {
-    background-color: rgba(58, 0, 48, 0.5);
+    background-color: var(--background-color);
     width: 100%;
     padding-bottom: 5vh;
     text-align: center;
