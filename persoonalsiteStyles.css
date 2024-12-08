@@ -42,7 +42,7 @@ body {
     font-weight: 700;
     margin-top: 200px;
     line-height: 1.2;
-    color: var(--primary-color);
+    color: var(--text-color);
     letter-spacing: 5px;
     z-index: 1;
     padding-top: 10px;
@@ -114,10 +114,10 @@ nav {
         to bottom,
         transparent 2px,
         /*white 2px,*/
-        white 4px,
+        var(--text-color) 4px,
         transparent 3px
     );
-    box-shadow:rgb(157, 33, 126) 0 0 15px;
+    box-shadow: var(--primary-color);
 }
 nav a {
     font-size: 40px;
