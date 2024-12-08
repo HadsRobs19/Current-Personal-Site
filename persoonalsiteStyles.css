@@ -309,10 +309,10 @@ h1:hover {
         to bottom,
         transparent 2px,
         /*white 2px,*/
-        white 4px,
+        var(--text-color) 4px,
         transparent 3px
     );
-    box-shadow:rgb(157, 33, 126) 0 0 15px;
+    box-shadow: var(--primary-color) 0 0 15px;
 }
 
 .wrapper3 {
@@ -377,10 +377,10 @@ h5 {
         to bottom,
         transparent 2px,
         /*white 2px,*/
-        white 4px,
+        var(--text-color) 4px,
         transparent 3px
     );
-    box-shadow:rgb(111, 147, 98) 0 0 15px;
+    box-shadow: var(--primary-color) 0 0 15px;
 }
 
 .workname {
@@ -401,10 +401,10 @@ h5 {
         to bottom,
         transparent 2px, 
         /*white 2px,*/
-        white 4px,
-        /* transparent 3px */
+        var(--text-color) 4px,
+        transparent 3px sss
     );
-    box-shadow:rgb(111, 147, 98) 0 0 15px;
+    box-shadow: var(--primary-color) 0 0 15px;
 }
 
 .skills {
@@ -426,10 +426,10 @@ h5 {
         to bottom,
         transparent 2px, 
         /*white 2px,*/
-        white 3px,
+        var(--text-color) 3px,
         /* transparent 3px */
     );
-    box-shadow:rgb(111, 147, 98) 0 0 15px;
+    box-shadow: var(--primary-color) 0 0 15px;
     margin-bottom: 800px;
 }
 
