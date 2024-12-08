@@ -1,10 +1,11 @@
 
 :root {
-    --text-color: #E9ECE8; /* Updated Text Color */
-    --header-color: #B7C2B4; /* Primary Color */
-    --text-shadow-color: rgba(85, 122, 76, 0.8); /* Secondary Color with slight transparency */
-    --background-color: #121411; /* Background Color */
-    --accent-color: #879D94; /* Accent Color */
+    --text-color: #E9ECE8; /* Light text color */
+    --background-color: #121411; /* Dark background color */
+    --primary-color: #576453; /* Primary color */
+    --secondary-color: #557A4C; /* Secondary color */
+    --accent-color: #879D94; /* Accent color */
+
 }
 
 body {
