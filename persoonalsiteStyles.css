@@ -192,7 +192,7 @@ h1 /* About Me text */ {
     animation: text-shadow 1.5s ease-in-out infinite;
     font-size: 150px;
     font-weight: 900;
-    color: var(--header-color);
+    color: var(--text-color);
     line-height: 1;
     padding-left: 500px;
     margin-bottom: 30px;
